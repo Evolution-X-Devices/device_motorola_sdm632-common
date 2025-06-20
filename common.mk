@@ -179,6 +179,8 @@ PRODUCT_PACKAGES += \
     init.mmi.chipset.rc \
     init.mmi.overlay.rc \
     init.qcom.rc \
+    init.recovery.qcom.rc \
+    init.recovery.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
 
@@ -294,10 +296,6 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xhdpi
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
-    $(LOCAL_PATH)/recovery/root/init.recovery.qcom.usb.rc:root/init.recovery.qcom.usb.rc
 
 # Remove Packages
 PRODUCT_PACKAGES += \
