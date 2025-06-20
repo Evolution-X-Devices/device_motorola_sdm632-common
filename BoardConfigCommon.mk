@@ -182,7 +182,7 @@ TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/init/fstab.qcom
 
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := persist
