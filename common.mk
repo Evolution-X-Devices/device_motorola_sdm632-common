@@ -29,13 +29,6 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # A/B updater
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -276,6 +269,20 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    CarrierConfigResTarget \
+    FrameworksResCommon \
+    SettingsResCommon \
+    SettingsProviderResCommon \
+    TelephonyResCommon \
+    WifiResTarget
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
@@ -289,10 +296,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor # Needed by CNE app
-
-# Radio
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xhdpi
@@ -375,7 +378,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     hostapd_cli \
     libwifi-hal-qcom \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
