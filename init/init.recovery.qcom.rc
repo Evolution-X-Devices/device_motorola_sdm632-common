@@ -1,4 +1,4 @@
-import /init.recovery.qcom.usb.rc
+import /system/etc/init/init.recovery.qcom.usb.rc
 
 on fs
     wait /dev/block/platform/soc/7824900.sdhci
