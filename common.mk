@@ -190,7 +190,8 @@ PRODUCT_COPY_FILES += \
 # MotoActions
 PRODUCT_PACKAGES += \
     MotoActions \
-    MotoCommonOverlay
+    MotoCommonOverlay \
+    TurboPowerOverlay
 
 # Partitions
 PRODUCT_PACKAGES += \
