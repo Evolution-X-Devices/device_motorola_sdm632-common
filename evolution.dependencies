@@ -1,0 +1,66 @@
+[
+  {
+    "repository": "hardware_motorola",
+    "target_path": "hardware/motorola",
+    "remote": "evo-devices"
+  },
+  {
+    "repository": "kernel_motorola_sdm632",
+    "target_path": "kernel/motorola/sdm632",
+    "remote": "evo-devices"
+  },
+  {
+    "repository": "Deivid-21s-Sources/android_packages_apps_RemovePackages",
+    "target_path": "packages/apps/RemovePackages",
+    "remote": "github-non-los",
+    "branch": "main"
+  },
+  {
+    "repository": "Deivid21/proprietary_vendor_motorola_MotCamera-common",
+    "target_path": "vendor/motorola/MotCamera-common"",
+    "remote": "gitlab",
+    "branch": "android-15"
+  },
+  {
+    "repository": "Deivid21/proprietary_vendor_motorola_MotCameraAI-common",
+    "target_path": "vendor/motorola/MotCameraAI-common"",
+    "remote": "gitlab",
+    "branch": "android-15"
+  },
+  {
+    "repository": "Deivid21/proprietary_vendor_motorola_MotCamera2",
+    "target_path": "vendor/motorola/MotCamera2",
+    "remote": "gitlab",
+    "branch": "android-15"
+  },
+  {
+    "repository": "Deivid21/proprietary_vendor_motorola_MotCamera2AI",
+    "target_path": "vendor/motorola/MotCamera2AI",
+    "remote": "gitlab",
+    "branch": "android-15"
+  },
+  {
+    "repository": "Deivid21/proprietary_vendor_motorola_MotoPhotoEditor",
+    "target_path": "vendor/motorola/MotoPhotoEditor",
+    "remote": "gitlab",
+    "branch": "android-15"
+  },
+  {
+    "repository": "Deivid21/proprietary_vendor_motorola_MotoSignatureApp",
+    "target_path": "vendor/motorola/MotoSignatureApp",
+    "remote": "gitlab",
+    "branch": "android-15"
+  },
+  {
+    "repository": "Deivid21/proprietary_vendor_motorola_MotorolaSettingsProvider",
+    "target_path": "vendor/motorola/MotorolaSettingsProvider",
+    "remote": "gitlab",
+    "branch": "android-15"
+  },
+  {
+    "repository": "Deivid-21s-Sources/proprietary_vendor_motorola_sdm632-common",
+    "target_path": "vendor/motorola/sdm632-common",
+    "remote": "github-non-los",
+    "branch": "lineage-22.2"
+  }
+]

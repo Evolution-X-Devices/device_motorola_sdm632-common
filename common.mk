@@ -125,11 +125,9 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
 $(call soong_config_set,libfmjni,vendor,qcom)
 
-# GMS
-ifeq ($(WITH_GMS),true)
-GMS_MAKEFILE=gms_minimal.mk
-WITH_GMS_COMMS_SUITE=false
-endif
+# GApps
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
