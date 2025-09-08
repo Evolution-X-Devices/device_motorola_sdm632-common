@@ -71,9 +71,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
@@ -148,6 +145,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.hidl.sensor.rc \
+    init.mmi.dalvik.rc \
     init.mmi.rc \
     init.mmi.chipset.rc \
     init.mmi.overlay.rc \

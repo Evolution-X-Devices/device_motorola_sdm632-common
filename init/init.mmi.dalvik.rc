@@ -1,0 +1,23 @@
+on property:ro.vendor.hw.ram=2GB
+    setprop dalvik.vm.heapstartsize 8m
+    setprop dalvik.vm.heapgrowthlimit 192m
+    setprop dalvik.vm.heapsize 384m
+    setprop dalvik.vm.heaptargetutilization 0.60
+    setprop dalvik.vm.heapminfree 4m
+    setprop dalvik.vm.heapmaxfree 16m
+
+on property:ro.vendor.hw.ram=3GB
+    setprop dalvik.vm.heapstartsize 12m
+    setprop dalvik.vm.heapgrowthlimit 256m
+    setprop dalvik.vm.heapsize 512m
+    setprop dalvik.vm.heaptargetutilization 0.58
+    setprop dalvik.vm.heapminfree 6m
+    setprop dalvik.vm.heapmaxfree 24m
+
+on property:ro.vendor.hw.ram=4GB
+    setprop dalvik.vm.heapstartsize 12m
+    setprop dalvik.vm.heapgrowthlimit 256m
+    setprop dalvik.vm.heapsize 512m
+    setprop dalvik.vm.heaptargetutilization 0.55
+    setprop dalvik.vm.heapminfree 8m
+    setprop dalvik.vm.heapmaxfree 24m
