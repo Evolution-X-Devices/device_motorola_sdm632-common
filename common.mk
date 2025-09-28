@@ -279,10 +279,6 @@ PRODUCT_PACKAGES += \
 # Recovery
 TARGET_RECOVERY_DENSITY := xhdpi
 
-# Remove Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # RFS MSM MPSS symlinks
 PRODUCT_PACKAGES += \
     rfs_msm_mpss_readonly_vendor_fsg_symlink
